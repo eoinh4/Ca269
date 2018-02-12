@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Cent2Fahr
+{
+    public static void main(String [] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        //System.out.print("Enter a number: ");
+        
+        int cels = in.nextInt();
+        double cel = cels;
+        double fahr = (cel * 9/5 + 32);
+        System.out.println(cels + " " + fahr);
+    }
+}
