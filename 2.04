@@ -1,0 +1,8 @@
+public class Measure
+{
+    static double inches2CMs(double inch)
+    {
+        double result = inch * 2.54;
+        return result;
+    }
+}
