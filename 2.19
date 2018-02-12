@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class StringReproduction
+{
+    public static void main(String [] args)
+    {
+        // Create a scanner object
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Enter an integer and a string: ");
+        // Read in the number ... 
+        int num = in.nextInt();
+        // ... and the string
+        String word = in.next();
+        String result = "";
+        for(int i = 0; i <= num-1;i++)
+        {
+            result = result + word;
+        }
+        System.out.println(result);
+    }
+}
