@@ -1,0 +1,8 @@
+public class Product
+{
+    static int multiply(int inta, int intb)
+    {
+        int result = inta * intb;
+        return result;
+    }
+}
