@@ -1,0 +1,19 @@
+public class Test
+{
+    public static int largest(int a, int b, int c)
+    {
+        int greater = -1;
+        if (a > b)
+        {
+             greater = a;
+        }
+        else 
+             greater = b;
+        if (greater > c)
+        {
+            return greater;
+        }
+        else 
+            return c;
+    }
+}
