@@ -1,0 +1,17 @@
+public class Teen
+{
+        static boolean isTeenager(int age)
+        {
+            if (age > 12 && age < 20)
+            {
+                boolean result = true;
+                return result;
+                
+            }
+            else
+            {
+                boolean result = false;
+                return result;
+            }
+        }
+}
