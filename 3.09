@@ -1,0 +1,16 @@
+public class Word
+{
+    static boolean containsLetter(String s, char c)
+    {
+    boolean result = false;
+        for(int i = 0; i < s.length();i++)
+        {
+            if(s.charAt(i) == c)
+            {
+                result = true;
+            }
+
+        }
+        return result;
+    }
+}
