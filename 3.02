@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class AboveAverage
+{
+    public static void main(String [] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("How many numbers: ");
+        int num = in.nextInt();
+        double[] numbers;
+        numbers = new double[num];
+        
+        System.out.print("Enter " + num + " numbers: ");
+
+        double average = 0;
+        for(int i = 0; i < num;i++)
+        {
+            numbers[i] = in.nextDouble();
+        }
+        for(int i = 0; i < num;i++)
+        {
+            average = average + numbers[i];
+        }
+        average = average / num;
+        System.out.println("The above average numbers are:");
+        for(int i = 0; i < num;i++)
+        {
+            if(numbers[i] > average)
+            System.out.print(" " + numbers[i]);
+        }
+        System.out.println(); // Should finish with a new line
+    }
+}
