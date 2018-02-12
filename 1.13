@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class LastLetter
+{
+    public static void main(String [] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("What is your name: ");
+        String last = in.next();
+        last = last.substring((last.length() - 1));
+        System.out.println("The last letter of your name is " + last + ".");
+    }
+}
