@@ -1,0 +1,8 @@
+public class Numbers
+{
+    static int square(int num)
+    {
+        int result = num * num;
+        return result;
+    }
+}
