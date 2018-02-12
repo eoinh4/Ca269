@@ -1,0 +1,10 @@
+public class Word
+{
+    static boolean isFirstLetter(String s, char c)
+    {
+    if (s != null){ 
+        return s.charAt(0) == c;
+    }
+    return false;
+}
+}
