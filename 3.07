@@ -1,0 +1,14 @@
+public class Test
+{
+    static int [] reverse(int [] array)
+    {
+    int placeholder = 0;
+    for(int i = 0; i < (array.length/2); i++)
+    {
+        placeholder = array[i];
+        array[i] = array[(array.length-i-1)];
+        array[(array.length-i-1)] = placeholder;
+    }
+    return array;
+    }
+}
