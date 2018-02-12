@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class HowManyNumbers
+{
+    public static void main(String [] args)
+    {
+        int placeholder = 0;
+        Scanner in = new Scanner(System.in);
+        int total = 0;
+        System.out.print("Enter numbers: \n");
+        while(placeholder != -1)
+        {
+            placeholder = in.nextInt();
+            total++;
+        }
+        System.out.println(total -1 + " numbers were entered.");
+    }
+}
