@@ -1,0 +1,30 @@
+public class BankAccount{
+        double balance;
+        public BankAccount(double b){
+        balance = b;
+        }
+        
+        public BankAccount(){
+            balance = 100.00;
+        }
+        
+        public void withdraw(double n){
+            balance = balance - n;
+        }
+        
+        public void deposit(double n){
+            balance = balance + n;
+        }
+        
+        public String toString(){
+            return "The balance is " + balance;
+        }
+        
+        public void setBalance(double b){
+            balance = b;
+        }
+        
+        public double getBalance(){
+            return balance;
+        }
+}
