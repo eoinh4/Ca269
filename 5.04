@@ -1,0 +1,57 @@
+public class Date
+{
+    private int day;
+    private int month;
+    private int year;
+    private  String name;  
+    public String toString()
+    {
+        return day + "/" + month + "/" + year;
+    }
+    
+    public Date(String date1)
+    {
+        this.name = date1;
+        String[] parts = date1.split(" ");
+        this.day = Integer.parseInt(parts[0]);
+        this.month = Integer.parseInt(parts[1]);
+        this.year = Integer.parseInt(parts[2]);
+    }
+    
+
+
+    public boolean isOnOrAfter(Date date2)
+    {
+    boolean check = false;
+    if(this.day == date2.day && this.month == date2.month && this.year == date2.year)
+        {
+            check = true;
+        }
+    if(this.year < date2.year)
+        {
+            check = false;
+    }
+    if(this.year > date2.year)
+        {
+            check = true;  
+        }
+    if(this.year == date2.year && this.month < date2.month)
+        {
+            check = false;
+        }
+    if(this.year == date2.year && this.month > date2.month)
+        {
+            check = true;
+        }
+    if(this.year == date2.year && this.month == date2.month && this.day < date2.day)
+        {
+            check = false;
+        }
+    if(this.year == date2.year && this.month == date2.month && this.day > date2.day)
+        {
+            check = true;
+        }
+    return check;
+    }
+    // Create a boolean method which will check to sae that the date is on or after the date that is passed as a parameter.
+}
